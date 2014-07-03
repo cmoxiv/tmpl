@@ -6,19 +6,55 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		CD1C4B6D1964A2A6000D4475 /* BUILD_ALL */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CD1C4B6E1964A2A6000D4475 /* Build configuration list for PBXAggregateTarget "BUILD_ALL" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = BUILD_ALL;
+			productName = BUILD_ALL;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		CD1C4B5A19647FBC000D4475 /* multi_array.h in Headers */ = {isa = PBXBuildFile; fileRef = CD1C4B5819647FBC000D4475 /* multi_array.h */; };
 		CD1C4B5B19647FBC000D4475 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD1C4B5919647FBC000D4475 /* main.cpp */; };
+		CD1C4B651964A0B0000D4475 /* tmpltest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CD1C4B641964A0B0000D4475 /* tmpltest.1 */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD1C4B5E1964A0B0000D4475 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				CD1C4B651964A0B0000D4475 /* tmpltest.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CD1C4B4D19647008000D4475 /* libtmpl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtmpl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1C4B5819647FBC000D4475 /* multi_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = multi_array.h; path = tmpl/multi_array.h; sourceTree = "<group>"; };
-		CD1C4B5919647FBC000D4475 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = tmpl/main.cpp; sourceTree = "<group>"; };
+		CD1C4B5919647FBC000D4475 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../tmpl/main.cpp; sourceTree = "<group>"; };
+		CD1C4B601964A0B0000D4475 /* tmpltest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tmpltest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1C4B641964A0B0000D4475 /* tmpltest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = tmpltest.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CD1C4B4A19647008000D4475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1C4B5D1964A0B0000D4475 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,7 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				CD1C4B5819647FBC000D4475 /* multi_array.h */,
-				CD1C4B5919647FBC000D4475 /* main.cpp */,
+				CD1C4B611964A0B0000D4475 /* tmpltest */,
 				CD1C4B4E19647008000D4475 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +77,18 @@
 			isa = PBXGroup;
 			children = (
 				CD1C4B4D19647008000D4475 /* libtmpl.a */,
+				CD1C4B601964A0B0000D4475 /* tmpltest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CD1C4B611964A0B0000D4475 /* tmpltest */ = {
+			isa = PBXGroup;
+			children = (
+				CD1C4B5919647FBC000D4475 /* main.cpp */,
+				CD1C4B641964A0B0000D4475 /* tmpltest.1 */,
+			);
+			path = tmpltest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -57,6 +103,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		CD1C4B691964A274000D4475 /* install */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = CD1C4B6A1964A274000D4475 /* Build configuration list for PBXLegacyTarget "install" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = install;
+			passBuildSettingsInEnvironment = 1;
+			productName = install;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		CD1C4B4C19647008000D4475 /* tmpl */ = {
@@ -75,6 +137,23 @@
 			productName = tmpl;
 			productReference = CD1C4B4D19647008000D4475 /* libtmpl.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		CD1C4B5F1964A0B0000D4475 /* tmpltest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1C4B681964A0B0000D4475 /* Build configuration list for PBXNativeTarget "tmpltest" */;
+			buildPhases = (
+				CD1C4B5C1964A0B0000D4475 /* Sources */,
+				CD1C4B5D1964A0B0000D4475 /* Frameworks */,
+				CD1C4B5E1964A0B0000D4475 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tmpltest;
+			productName = tmpltest;
+			productReference = CD1C4B601964A0B0000D4475 /* tmpltest */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +177,9 @@
 			projectRoot = "";
 			targets = (
 				CD1C4B4C19647008000D4475 /* tmpl */,
+				CD1C4B5F1964A0B0000D4475 /* tmpltest */,
+				CD1C4B691964A274000D4475 /* install */,
+				CD1C4B6D1964A2A6000D4475 /* BUILD_ALL */,
 			);
 		};
 /* End PBXProject section */
@@ -108,6 +190,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD1C4B5B19647FBC000D4475 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1C4B5C1964A0B0000D4475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +292,63 @@
 			};
 			name = Release;
 		};
+		CD1C4B661964A0B0000D4475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD1C4B671964A0B0000D4475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD1C4B6B1964A274000D4475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD1C4B6C1964A274000D4475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD1C4B6F1964A2A6000D4475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD1C4B701964A2A6000D4475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -223,6 +369,30 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CD1C4B681964A0B0000D4475 /* Build configuration list for PBXNativeTarget "tmpltest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1C4B661964A0B0000D4475 /* Debug */,
+				CD1C4B671964A0B0000D4475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD1C4B6A1964A274000D4475 /* Build configuration list for PBXLegacyTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1C4B6B1964A274000D4475 /* Debug */,
+				CD1C4B6C1964A274000D4475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD1C4B6E1964A2A6000D4475 /* Build configuration list for PBXAggregateTarget "BUILD_ALL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1C4B6F1964A2A6000D4475 /* Debug */,
+				CD1C4B701964A2A6000D4475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -4,15 +4,45 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BUILD_ALL.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>install.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>tmpl.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>tmpltest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>CD1C4B4C19647008000D4475</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD1C4B5F1964A0B0000D4475</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD1C4B691964A274000D4475</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD1C4B6D1964A2A6000D4475</key>
 		<dict>
 			<key>primary</key>
 			<true/>
